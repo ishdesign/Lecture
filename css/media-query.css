@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* 모든 디바이스 */
+body{
+  background-color: rgb(215, 240, 225);
+}
+figure{
+  margin: 0;
+  padding: 0;
+}
+/* width 100%는 디바이스에 맞춰 100%, max-with 100%는 해당 이미지의 100% */
+.img-wrap img{
+  width: 100%;
+  height: auto;
+}
+/* 모바일 디바이스 - 1px부터 599px 까지 */
+/* 아래 @media의 조건이 충족될 때만 동작 */
+@media screen and (min-width: 1px) and (max-width: 599px){
+  body{
+    background-color: rgb(255, 255, 214);
+  }
+  .img-wrap{
+    margin: 1em;
+  }
+}
+/* 태블릿 디바이스 - 600px부터 1024px 까지 */
+@media screen and (min-width: 600px) and (max-width: 1024px){
+  body{
+    background-color: rgb(246, 231, 253);
+  }
+  .wrap-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .img-wrap{
+    width: 50%;
+    padding: 1em;
+    /* 박스사이징: 보더박스 = 박스 사이즈 안에 패딩과 보더가 포함되어 계산. 백분율 단위와 함께 묶여 자주 쓰임*/
+    box-sizing: border-box;
+  }
+}
+/* 데스크납 디바이스 - 1025px 이상 */
+@media screen and (min-width: 1025px){
+  body{
+    background-color: rgb(221, 249, 253);
+  }
+  .wrap-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .img-wrap{
+    width: 33.33333333%;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+}
