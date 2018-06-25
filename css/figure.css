@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+div{
+  background-color: rgb(221, 187, 194);
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+   /* flex만 줄 때는 가로로만 나열하는 습성이 있다.
+   둘째줄은 기본값이라 안줘도 무방하지만 가로 사이즈를 변경할 것이라면 적어줌
+   row는 행방향 순서로 나열, column은 열방향 순서로 나열
+   flex-wrap으로 그룹화 나열 */
+}
+div figure{
+  margin: 0;
+}
