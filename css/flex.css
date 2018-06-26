@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+.wrap{
+  background-color:yellow;
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  /* 플렉스 디렉션의 디폴트는 row  */
+  flex-direction: row;
+     /* row: 요소들을 텍스트의 방향과 동일하게 정렬합니다.
+        row-reverse: 요소들을 텍스트의 반대 방향으로 정렬합니다.
+        column: 요소들을 위에서 아래로 정렬합니다.
+        column-reverse: 요소들을 아래에서 위로 정렬합니다. */
+  justify-content: space-evenly
+      /* space-around: 오브젝트 여백을 포함해 사이 간격을 균등하게 배치 */
+      /* space-between: */
+      /* space-evenly: 오브젝트 사이 간격을 균등하게 배치 */
+      /* align-self: */
+  border: 10px solid red;
+}
+.wrpa div{
+  background-color: pink;
+  flex-basis: 300px;
+  flex-shrink: 0px;
+  /* flex-shrink: 원본보다 숫자만큼 축소 */
+}
+/* order값: html 마크업은 논리적인 순서로 두고 디자인 순서를 바꿀 때 */
+.w1{
+  flex-shrink: 1;
+  flex-grow: 2;
+}
+.w2{
+  flex-shrink: 2;
+  flex-grow: 3;
+}
+.w3{
+  order: -1;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.w4{
+  flex-shrink: 1;
+  flex-grow: 1;
+}
