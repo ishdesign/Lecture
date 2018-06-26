@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+@keyframes text-ani{
+    /*from = 0%, to = 100% */
+    0%{
+      font-size: 16px;
+      color: rgba(112, 145, 216, 0);
+      top: 0;
+      left: 0;
+    }
+    100%{
+      font-size: 48px;
+      color: rgb(55, 85, 151);
+      top: 150px;
+      left: 450px;
+      opacity: 1;
+    }
+}
+@keyframes img-ani{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(700px);
+  }
+}
+
+.text-wrap{
+ background-color: rgb(219, 245, 255);
+ width: 1000px;
+ height: 300px;
+ margin: 0 auto;
+ position: relative;
+}
+.text{
+  background-color: rgb(145, 198, 219);
+  position: absolute;
+  opacity: 0;
+
+  /* animation-name: text-ani;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 5s; */
+
+  /* 위의 태그를 한 번에 나열 */
+  animation: text-ani 5s forwards ease-in-out infinite alternate 2s; 
+   /* 뒤에 나오는 숫자가 딜레이 */
+}
+.img-wrap{
+  background-color: pink;
+  padding: 50px;
+}
+.lion{
+  animation: img-ani 3000ms forwards infinite alternate;
+}
