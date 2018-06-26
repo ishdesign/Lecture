@@ -12,7 +12,7 @@
         row-reverse: 요소들을 텍스트의 반대 방향으로 정렬합니다.
         column: 요소들을 위에서 아래로 정렬합니다.
         column-reverse: 요소들을 아래에서 위로 정렬합니다. */
-  justify-content: space-evenly
+  justify-content: space-evenly;
       /* space-around: 오브젝트 여백을 포함해 사이 간격을 균등하게 배치 */
       /* space-between: */
       /* space-evenly: 오브젝트 사이 간격을 균등하게 배치 */
