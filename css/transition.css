@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.box1{
+  width: 200px;
+  height: 200px;
+  border: 10px solid rgb(106, 205, 230);
+  background-color: rgb(189, 241, 241);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 아래 태그: 마우스 올렸을 때 상황이지만 hover에 주지 않고 시작지점인 이곳(.box1)에서 마크업 한다 */
+  transition-property: background, border-radius, transform;
+  transition-duration: 2000ms, 2000ms, 2000ms;
+  transition-delay: 0s, 2s, 4s;
+  transition-timing-function: ease-in-out;
+}
+/* hover: 상황을 선택할 때(ex.마우스 올렸을 때 등) */
+.box1:hover{
+  border-radius: 50%;
+  transform: rotate(360deg);
+  background-color: rgb(185, 233, 255);
+}
